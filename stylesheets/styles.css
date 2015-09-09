@@ -4,6 +4,7 @@
 	border: 1px black solid;
 	padding-top: 200px;
 	padding-left: 200px;
+	/*margin-top: 50px;*/
 }
 .footprint {
 	height: 100px;
@@ -33,7 +34,16 @@
     }
 }
 
-@-webkit-keyframes 'walk-left' {
+@-webkit-keyframes 'forward' {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	100% {
+		transform: translate(0px, -200px);
+	}
+}
+
+/*@-webkit-keyframes 'walk-left' {
 	0% {
 		transform: translate(0px, 0px);
 		opacity:1;
@@ -59,50 +69,50 @@
 		transform: translate(0px, -200px);
 		opacity:1;
 	}
-}
+}*/
 
 @-webkit-keyframes 'backward' {
     0% {
-        opacity:1;
+        transform: translate(0px, 0px);
     }
     50% {
         opacity:0;
     }
     100% {
-        opacity:1;
+        transform: translate(0, 200px);
     }
 }
 
 @-webkit-keyframes 'left' {
     0% {
-        opacity:1;
-    }
-    50% {
-        opacity:0;
+        transform: translate(0px, 0px);
     }
     100% {
-        opacity:1;
+        transform: translate(-200px, 0px);
     }
 }
 
 @-webkit-keyframes 'right' {
     0% {
-        opacity:1;
-    }
-    50% {
-        opacity:0;
+        transform: translate(0px, 0px);
     }
     100% {
-        opacity:1;
+        transform: translate(200px, 0px);
     }
 }
 
 .walk-left {
+/*	-webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;*/
     
     -webkit-animation-direction: normal;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: walk-left;
+    -webkit-animation-name: step, forward;
+    /*-webkit-animation-name: step;*/
     -webkit-animation-timing-function: linear;
 }
 
@@ -118,7 +128,7 @@
     -webkit-animation-duration: 1.5s;
     -webkit-animation-iteration-count: infinite;
     /*-webkit-animation-name: step;*/
-    -webkit-animation-name: walk-right;
+    -webkit-animation-name: step, forward;
     -webkit-animation-timing-function: linear;   
 }
 
@@ -151,4 +161,11 @@
     -webkit-animation-timing-function: ease-in-out;   
 }
 
+.rumba-left {
+
+}
+
+.rumba-right {
+
+}
 
