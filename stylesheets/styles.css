@@ -100,6 +100,79 @@
         transform: translate(200px, 0px);
     }
 }
+@-webkit-keyframes 'diagnol-3-12' {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(100px, 0px);
+    }
+    50% {
+    	transform: translate(0px, -100px);
+    }
+    75% {
+    	transform: translate(0px, 0px);
+    }
+    100% {
+    	transform: translate(0px, 0px);
+    }
+}
+@-webkit-keyframes 'diagnol-3-6' {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(200px, 0px);
+    }
+    75% {
+    	transform: translate();
+    }
+    100% {
+    	transform: translate(0px, 0px);
+    }
+}
+@-webkit-keyframes 'diagnol-6-9' {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(200px, 0px);
+    }
+    75% {
+    	transform: translate();
+    }
+    100 {
+    	transform: translate(0px, 0px);
+    }
+}
+@-webkit-keyframes 'diagnol-9-12' {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(200px, 0px);
+    }
+    75% {
+    	transform: translate();
+    }
+    100% {
+    	transform: translate(0px, 0px);
+    }
+}
+@-webkit-keyframes 'diagnol-9-6' {
+    0% {
+    	transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(-100px, 0px);
+    }
+    75% {
+        transform: translate(0px, 100px);
+    }
+    100% {
+    	transform: translate(0px, 0px);
+    }
+}
 
 .walk-left {
 /*	-webkit-transition: all 0.25s ease-in-out;
@@ -162,10 +235,32 @@
 }
 
 .rumba-left {
-
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    animation-delay: 2s;
+    
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: diagnol-9-6, step;
+    -webkit-animation-timing-function: ease-in-out; 
 }
 
 .rumba-right {
-
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    animation-delay: 0s;
+    
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: diagnol-3-12, step;
+    -webkit-animation-timing-function: ease-in-out; 
 }
 
