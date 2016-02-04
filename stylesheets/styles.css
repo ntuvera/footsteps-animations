@@ -43,34 +43,6 @@
 	}
 }
 
-/*@-webkit-keyframes 'walk-left' {
-	0% {
-		transform: translate(0px, 0px);
-		opacity:1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		transform: translate(0px, -200px);
-		opacity:1;
-	}
-}
-
-@-webkit-keyframes 'walk-right' {
-	0% {
-		transform: translate(0px, 0px);
-		opacity:1;
-	}
-	50%{
-		opacity:0;
-	}
-	100% {
-		transform: translate(0px, -200px);
-		opacity:1;
-	}
-}*/
-
 @-webkit-keyframes 'backward' {
     0% {
         transform: translate(0px, 0px);
@@ -121,6 +93,9 @@
     0% {
         transform: translate(0px, 0px);
     }
+    25% {
+
+    }
     50% {
         transform: translate(200px, 0px);
     }
@@ -135,6 +110,9 @@
     0% {
         transform: translate(0px, 0px);
     }
+    25% {
+
+    }
     50% {
         transform: translate(200px, 0px);
     }
@@ -148,6 +126,9 @@
 @-webkit-keyframes 'diagnol-9-12' {
     0% {
         transform: translate(0px, 0px);
+    }
+    25% {
+
     }
     50% {
         transform: translate(200px, 0px);
@@ -168,6 +149,9 @@
     }
     75% {
         transform: translate(0px, 100px);
+    }
+    87.5% {
+    	transform: translate(0px, 0px);
     }
     100% {
     	transform: translate(0px, 0px);
@@ -200,7 +184,6 @@
     -webkit-animation-direction: normal;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-iteration-count: infinite;
-    /*-webkit-animation-name: step;*/
     -webkit-animation-name: step, forward;
     -webkit-animation-timing-function: linear;   
 }
@@ -245,7 +228,7 @@
     -webkit-animation-direction: normal;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: diagnol-9-6, step;
+    -webkit-animation-name: diagnol-9-6;
     -webkit-animation-timing-function: ease-in-out; 
 }
 
@@ -260,7 +243,14 @@
     -webkit-animation-direction: normal;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: diagnol-3-12, step;
+    -webkit-animation-name: diagnol-3-12;
     -webkit-animation-timing-function: ease-in-out; 
 }
 
+.jive-left {
+
+}
+
+.jive-right {
+
+}
